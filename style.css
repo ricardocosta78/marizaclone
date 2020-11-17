@@ -196,6 +196,7 @@ body {
   height: 100vh;
   background: url('https://www.mariza.com/imagens/fundos/banner_2018_1.jpg')
     center no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   text-align: center;
@@ -258,6 +259,7 @@ body {
   margin: 50px auto;
   background-image: url('https://www.mariza.com/inc/phpthumb2/thumbigniter.php?src=/home/velcrodesign/webapps/mariza/uploads/destaques/marizathumblagrima2020.jpg&w=1360&h=765');
   background-position: center;
+  background-size: cover;
   background-color: black;
 }
 
@@ -366,5 +368,86 @@ body {
   margin-left: 35px;
 }
 .right {
+  display: grid;
   background-color: rgba(0, 0, 0, 0.212);
+}
+
+.data-right {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 70px;
+  margin-right: 50px;
+  list-style: none;
+}
+.proximas {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  text-align: justify;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.proximas a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  padding: 2px 5px;
+}
+
+.proximas a:hover {
+  color: var(--hover-color);
+}
+.tabela {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.tabela tbody td {
+  padding: 5px 0;
+}
+.tabela a {
+  font-size: 15px;
+  margin: 20px 20px 0 0;
+  color: white;
+  text-decoration: none;
+}
+.tabela a:hover {
+  color: var(--hover-color);
+}
+.signal {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  text-align: justify;
+  font-size: 15px;
+  padding: 20px;
+}
+.signal .plus {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+.signal .plus:hover {
+  color: var(--hover-color);
+}
+
+.signal a {
+  font-weight: 100;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 2px 20px;
+}
+
+.signal .tabela a:hover {
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 600px) {
 }
